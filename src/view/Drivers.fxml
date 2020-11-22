@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="drivers_pane" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriversController">
+   <children>
+      <ImageView fx:id="image_drivers" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoFT1.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="list_drivers" layoutX="238.0" layoutY="21.0" onMouseClicked="#displaySelected" prefHeight="415.0" prefWidth="337.0" />
+      <Button fx:id="bt_close_drivers" layoutX="846.0" layoutY="441.0" mnemonicParsing="false" onAction="#closedriversButtonAction" prefHeight="45.0" prefWidth="140.0" text="Close">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_back_drivers" layoutX="694.0" layoutY="441.0" mnemonicParsing="false" onAction="#backdriversButtonAction" prefHeight="45.0" prefWidth="140.0" text="Back">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textField1_drivers" editable="false" layoutX="764.0" layoutY="151.0" mouseTransparent="true" prefHeight="25.0" prefWidth="129.0" />
+      <Label fx:id="label1_drivers" layoutX="665.0" layoutY="129.0" prefHeight="18.0" prefWidth="174.0" text="DRIVER INFORMATION">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2_drivers" layoutX="665.0" layoutY="155.0" prefHeight="17.0" prefWidth="97.0" text="Start in the firm: " />
+      <Label fx:id="label3_drivers" layoutX="665.0" layoutY="185.0" prefHeight="17.0" prefWidth="91.0" text="Phone number: " />
+      <TextField fx:id="textField2_drivers" editable="false" layoutX="765.0" layoutY="181.0" mouseTransparent="true" prefHeight="25.0" prefWidth="129.0" />
+   </children>
+</AnchorPane>
